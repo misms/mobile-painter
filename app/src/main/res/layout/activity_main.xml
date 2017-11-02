@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cw1.paint.MainActivity"
+    >
+    <com.cw1.paint.FingerPainterView
+        android:id="@+id/painter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/import_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tooltipText="Import Image"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/select_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tooltipText="Select Color"
+            app:srcCompat="@drawable/ic_color_lens_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/clear_canvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tooltipText="Clear Canvas"
+            app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/select_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tooltipText="Select Brush"
+            app:srcCompat="@drawable/ic_brush_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tooltipText="Save Image"
+            app:srcCompat="@drawable/ic_get_app_black_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

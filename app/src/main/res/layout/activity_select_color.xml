@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cw1.paint.SelectColor">
+
+    <!--<yuku.ambilwarna.widget.AmbilWarnaPreference-->
+        <!--android:layout_height="495dp"-->
+        <!--android:layout_width="368dp"-->
+        <!--android:defaultValue="0xff6699cc"-->
+        <!--android:title="Pick a color"-->
+        <!--tools:layout_editor_absoluteY="8dp"-->
+        <!--tools:layout_editor_absoluteX="8dp" />-->
+
+    <Button
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Reopen Color Picker" />
+
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Exit" />
+</RelativeLayout>

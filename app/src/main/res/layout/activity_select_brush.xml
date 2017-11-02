@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cw1.paint.SelectBrush">
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:max="50"
+        android:progress="2"/>
+
+    <TextView
+        android:id="@+id/currentBrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBar2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Current Brush Size : " />
+
+    <Button
+        android:id="@+id/roundBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/currentBrush"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="22dp"
+        android:text="Round" />
+
+    <Button
+        android:id="@+id/squareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roundBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:text="Square" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/currentBrush"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp"
+        android:text="cancel" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/squareBtn"
+        android:layout_alignTop="@+id/cancelBtn"
+        android:text="ok" />
+
+</RelativeLayout>
